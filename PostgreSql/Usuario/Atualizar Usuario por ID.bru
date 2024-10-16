@@ -1,0 +1,33 @@
+meta {
+  name: Atualizar Usuario por ID
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/api/usuario/atualizar/1
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+body:json {
+  {
+      "nome": "Julia Silva",
+      "email": "juliaSilva@example.com",
+      "senha": "senhaSegura123",
+      "dtNasc": "1990-05-10",
+      "username": "jusilva",
+      "fotoPerfil": "link_para_foto.jpg",
+      "roles": [
+          {
+              "id":2,
+              "roleName": "USUARIO_PADRAO"
+          }
+      ]
+  }
+  
+}

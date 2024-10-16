@@ -1,0 +1,15 @@
+meta {
+  name: Listar Forum por Nome
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/forum/listar/PingPros
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

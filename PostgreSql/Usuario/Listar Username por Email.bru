@@ -1,0 +1,15 @@
+meta {
+  name: Listar Username por Email
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/api/usuario/listar/username/juliaSilva@example.com
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

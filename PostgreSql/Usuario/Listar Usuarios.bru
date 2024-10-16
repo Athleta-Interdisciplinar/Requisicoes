@@ -1,0 +1,15 @@
+meta {
+  name: Listar Usuarios
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/usuario/listar
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
