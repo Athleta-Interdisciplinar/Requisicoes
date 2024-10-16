@@ -1,0 +1,15 @@
+meta {
+  name: Adicionar Postagem
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/api/postagem/inserir
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

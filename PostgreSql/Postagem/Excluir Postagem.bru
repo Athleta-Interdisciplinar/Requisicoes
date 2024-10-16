@@ -1,0 +1,15 @@
+meta {
+  name: Excluir Postagem
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{host}}/api/postagem/excluir/4
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

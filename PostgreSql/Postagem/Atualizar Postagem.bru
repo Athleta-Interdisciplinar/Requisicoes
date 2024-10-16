@@ -1,0 +1,15 @@
+meta {
+  name: Atualizar Postagem
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{host}}/api/postagem/editar/3/Meu%20Texto
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

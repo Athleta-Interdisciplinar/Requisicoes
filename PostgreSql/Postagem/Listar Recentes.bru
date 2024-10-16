@@ -1,0 +1,15 @@
+meta {
+  name: Listar Recentes
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/postagem/listardata
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

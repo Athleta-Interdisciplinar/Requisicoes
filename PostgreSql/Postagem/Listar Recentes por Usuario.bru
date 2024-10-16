@@ -1,0 +1,15 @@
+meta {
+  name: Listar Recentes por Usuario
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/api/postagem/listardata/1
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
