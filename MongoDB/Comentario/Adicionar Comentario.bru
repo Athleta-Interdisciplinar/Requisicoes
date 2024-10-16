@@ -1,0 +1,20 @@
+meta {
+  name: Adicionar Comentario
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/api/comentario/adicionar
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "idPostReferente":"1",
+      "idUsuario":"28",
+      "idUsuarioReferente":"26",
+      "texto":"aaa"
+  }
+}

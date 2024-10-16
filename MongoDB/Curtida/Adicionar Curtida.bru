@@ -1,0 +1,19 @@
+meta {
+  name: Adicionar Curtida
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/api/curtida/adicionar
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "idPostReferente":"1",
+      "idUsuario":"27",
+      "idUsuarioReferente":"26"
+  }
+}
