@@ -1,0 +1,15 @@
+meta {
+  name: Excluir Anuncio
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/api/anuncio/excluir/3
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

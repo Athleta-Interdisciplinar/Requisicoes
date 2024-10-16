@@ -1,0 +1,26 @@
+meta {
+  name: Adicionar Anuncio
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/anuncio/inserir
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+body:json {
+  {
+      "preco": 299.99,
+      "descricao": "Ótimo estado, pouco usado.",
+      "nome": "Notebook Dell",
+      "quant": 5,
+      "idUsuario": 1,
+      "idEstado": 1
+  }
+}

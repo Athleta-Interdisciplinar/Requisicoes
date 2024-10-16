@@ -1,0 +1,15 @@
+meta {
+  name: Listar Anuncio por ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/anuncio/listar/4
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: https://api-spring-z2b5.onrender.com/api/auth/login
+  url: {{host}}/api/auth/login
   body: json
   auth: none
 }
@@ -15,4 +15,8 @@ body:json {
       "username":"jusilva",
       "senha":"senhaSegura123" 
   }
+}
+
+vars:post-response {
+  token: res.body.token
 }
